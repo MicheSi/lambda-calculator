@@ -1,10 +1,11 @@
 import React from "react";
 
 const NumberButton = (props) => {
+  const {number} = props;
   return (
-    <button className="number_button">
-      {props.button.value}
-    </button>
+    <div>
+    <button className={number}>{number}</button>
+    </div>
   );
 };
 
