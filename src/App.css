@@ -5,15 +5,16 @@ html {
 .container {
     background-color: #c00025;
     width: 100%;
-    max-width: 550px;
+    max-width: 500px;
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
 }
 .display {
     margin-top: 25px;
+    margin-left: 3%;
     height: 100px;
-    width: 450px;
+    width: 425px;
     border-radius: 50px;
     color: white;
     background-color: #322c2d;
@@ -47,6 +48,7 @@ html {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 
 .button {
     border-radius: 50%;
