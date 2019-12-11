@@ -5,16 +5,17 @@ html {
 .container {
     background-color: #c00025;
     width: 100%;
-    max-width: 500px;
+    height: 90vh;
+    max-width: 450px;
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
 }
+
 .display {
-    margin-top: 25px;
-    margin-left: 3%;
+    margin: 3% 0 4% 3.5%;
     height: 100px;
-    width: 425px;
+    width: 375px;
     border-radius: 50px;
     color: white;
     background-color: #322c2d;
@@ -31,10 +32,15 @@ html {
     flex-wrap: wrap;
 }
 
+.logo {
+    margin: 6% 0 0 4%;
+}
+
 .leftSide {
-    width: 75%;
+    width: 65%;
     flex-wrap: wrap;
     flex-direction: column;
+    margin: 0 4.5%;
 }
 
 .rightSide {
@@ -52,11 +58,12 @@ html {
 
 .button {
     border-radius: 50%;
-    width: 75px;
-    height: 75px;
+    width: 80px;
+    height: 80px;
     text-align: center;
     color: white;
     border: 1px solid navy;
+    margin: 5% 0;
 }
 
 .numberBtn {
