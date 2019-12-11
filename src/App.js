@@ -17,26 +17,26 @@ function App() {
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 
-  const [display, setDisplay] = useState(0);
+  const [displayNum, setDisplayNum] = useState('0');
 
   const showNumber = (number) => {
-    setDisplay(display => display + number);
+    setDisplayNum(displayNum => displayNum + number);
   }
 
   const clearDisplay = (special) => {
     if (special === "C") {
-      setDisplay(display => (0))
+      setDisplayNum(display => ('0'))
     } else {
-      setDisplay(display);
+      setDisplayNum(displayNum);
     }
   }
 
   return (
     <div className="container">
       <Logo />
-      <Display number={display}/>
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
+        <Display number={displayNum}/>
         <div className='leftSide'>
           <Specials clearDisplay={clearDisplay}/>
           <Numbers showNumber={showNumber}/>
